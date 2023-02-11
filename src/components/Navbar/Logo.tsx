@@ -1,11 +1,7 @@
 import { BsHexagon } from "react-icons/bs";
 
 const Logo = () => {
-  return (
-    <div className="w-[45px] h-[45px]">
-      <BsHexagon size="100%" />
-    </div>
-  );
+  return <BsHexagon className="text-[4rem]" />;
 };
 
 export default Logo;

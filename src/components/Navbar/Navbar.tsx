@@ -5,15 +5,15 @@ import NavbarLinks from "./NavbarLinks";
 const Navbar = () => {
   const navLinks = ["About", "Experience", "Work", "Contact"];
   return (
-    <div className="flex justify-between items-center px-10 py-7 text-white text-sm">
+    // fixed doesn't allow margin auto.
+    <div className="text-white text-sm flex justify-between py-[1.5em] px-[5em] w-[100%] fixed">
       <Logo />
-      <div className="flex items-center space-x-10">
-        <div className="flex space-x-6">
+      <div className="flex items-center">
+        <div className="flex mr-[4.5em]">
           {navLinks.map((link, index) => (
             <NavbarLinks index={index} title={link} />
           ))}
         </div>
-
         <Button title="Resume" />
       </div>
     </div>

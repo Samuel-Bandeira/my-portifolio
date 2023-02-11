@@ -6,9 +6,10 @@ function App() {
   return (
     <div className="bg-[#0a192f]">
       <Navbar />
-      <Home />
-      <AboutMe />
-      <p className="text-red-500">hello</p>
+      <div className="w-[60%] m-auto flex flex-col justify-start">
+        <Home />
+        <AboutMe />
+      </div>
     </div>
   );
 }
